@@ -1,6 +1,6 @@
 <?php
 
-define('BASEURL', 'http://localhost/websiteaku/public');
+define('BASEURL', 'http://localhost/websiteaku');
 
 // DB
 define('DB_HOST', 'mysql:host=localhost;dbname=blog');
