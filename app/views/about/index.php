@@ -7,7 +7,12 @@
     <title>Head</title>
 </head>
 <body>
-    <h2>About Me</h2>
-    <p>Saya <?= $data['nama'] ?>, umur <?= $data['umur'] ?>, saya adalah <?= $data['pekerjaan'] ?></p>
+
+    <div class="container">
+        <h1 class="mt-4">About Me</h1>
+        <img src="<?= BASEURL; ?>/img/profile.jpg" alt="1" width="200" class="rounded-circle shadow">
+        <p>Saya <?= $data['nama'] ?>, umur <?= $data['umur'] ?>, saya adalah <?= $data['pekerjaan'] ?></p>
+    </div>
+
 </body>
 </html>

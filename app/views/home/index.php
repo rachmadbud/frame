@@ -1,2 +1,2 @@
 
-    <H2>Selamat Datang Di website Saysssa</H2>
+    <H2>Selamat Datang Di website Saya <?= $data['nama'] ?> </H2>

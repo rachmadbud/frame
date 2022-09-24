@@ -12,7 +12,7 @@ class App
         $url = $this->parseUrl();
         
         // cek url (Controller)
-        if (file_exists('../app/controllers/' . $url[0]. '.php')) {
+        if (file_exists('../app/controllers/' . $url[0] . '.php')) {
             // menjadikan controller yang baru
             $this->controller = $url[0];
             
