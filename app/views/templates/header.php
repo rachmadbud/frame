@@ -7,7 +7,7 @@
 
     <title>Halaman </title>
 
-    <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap.min.css">
 
 </head>
 

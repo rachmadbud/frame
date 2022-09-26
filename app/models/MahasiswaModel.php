@@ -24,4 +24,22 @@ class MahasiswaModel
 
         return $this->db->single();
     }
+
+    // tambahDataMahasiswa
+    public function tambahDataMahasiswa($data)
+    {
+        $query = "INSERT INTO mahasiswa
+                    VALUES
+                    ('', :nama, :npm, :email)";
+
+        $this->db->query($query);
+        $this->db->bind('nama', $data['nama']);
+        $this->db->bind('npm', $data['npm']);
+        $this->db->bind('email', $data['email']);
+
+        $this->db->execute();
+
+        return $this->db->rowCount();
+    }
+
 }
