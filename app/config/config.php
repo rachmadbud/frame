@@ -1,6 +1,6 @@
 <?php
 
-define('BASEURL', 'http://localhost/frame');
+define('BASEURL', 'http://192.168.1.16/frame');
 
 // DB
 define('DB_HOST', 'mysql:host=localhost;dbname=blog');

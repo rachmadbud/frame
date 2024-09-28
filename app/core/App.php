@@ -10,12 +10,12 @@ class App
     public function __construct()
     {
         $url = $this->parseUrl();
-        
+
         // cek url (Controller)
         if (file_exists('../app/controllers/' . $url[0] . '.php')) {
             // menjadikan controller yang baru
             $this->controller = $url[0];
-            
+
             // hilangkan controller dari elemen arraynya
             unset($url[0]);
         }
@@ -33,7 +33,6 @@ class App
                 // kalo ada, ganti
                 $this->method = $url[1];
                 unset($url[1]);
-                
             }
         }
 
@@ -61,6 +60,9 @@ class App
             // pecah url dalam tanda /
             $url = explode('/', $url);
             return $url;
+        } else {
+            // Jika URL kosong, kembalikan URL default
+            return ['Home', 'index'];
         }
     }
 }
